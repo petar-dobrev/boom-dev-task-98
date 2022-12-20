@@ -1,4 +1,4 @@
-import styles from "./LoginForm.module.scss";
+import styles from "./LoginForm.module.css";
 
 const LoginForm = () => {
   return (
@@ -16,7 +16,7 @@ const LoginForm = () => {
         id="password"
         className={styles.input}
       />
-      <input type="button" value="Submit" className={styles.submit} />
+      <input type="submit" value="Submit" className={styles.submit} />
     </form>
   );
 };
