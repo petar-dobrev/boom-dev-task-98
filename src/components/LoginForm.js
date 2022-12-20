@@ -2,7 +2,7 @@ import styles from "./LoginForm.module.css";
 
 const LoginForm = () => {
   return (
-    <form className={styles.form}>
+    <form className={styles.form} id="form">
       <label htmlFor="username" className={styles.label}>
         Username
       </label>
@@ -16,7 +16,9 @@ const LoginForm = () => {
         id="password"
         className={styles.input}
       />
-      <input type="submit" value="Submit" className={styles.submit} />
+      <button type="submit" form="form" className={styles.submit}>
+        Submit
+      </button>
     </form>
   );
 };
